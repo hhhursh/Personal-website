@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.nav_container {
+  background: black;
+}
+.nav_container .header {
+  display: grid;
+  justify-content: space-around;
+  height: 7em;
+}
+.nav_container .header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2em;
+  list-style-type: none;
+}
+.nav_container .header nav ul a {
+  text-decoration: none;
+  padding: 0.25em;
+  font-weight: 600;
+  justify-content: space-around;
+  color: rgb(121, 45, 221);
+}
+.nav_container .social-header {
+  display: none;
+}
+
+.hero {
+  margin: 0;
+  padding-left: 1em;
+  background: linear-gradient(black, #030961);
+  display: grid;
+}
+.hero .page {
+  font-weight: 600;
+  font-size: small;
+  color: azure;
+}
+.hero .content {
+  color: azure;
+  font-size: 15px;
+}
+.hero .content .intro {
+  font-size: 3em;
+  font-weight: 700;
+  color: azure;
+}
+.hero .content .intro .intro-name {
+  color: rgb(143, 13, 231);
+}
+
+.featured {
+  background: linear-gradient(#030961, black);
+}
+.featured .left .inner-transition2 {
+  display: grid;
+  margin: 1 em;
+  width: 90%;
+}
+.featured .left .inner-transition2 .subtitle {
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-left: 0.7em;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: azure;
+  margin-top: 5em;
+}
+.featured .left .inner-transition2 .featured-title {
+  text-decoration: none;
+  text-align: center;
+  color: rgb(143, 13, 231);
+  font-weight: 700;
+  font-size: 3em;
+  margin: 0;
+  padding-left: 0em;
+}
+.featured .left .inner-transition2 .featured-desc {
+  text-align: center;
+  color: #f1edeb;
+  font-weight: 300;
+  padding-left: 6em;
+  text-align: end;
+}
+.featured .left .inner-transition2 .learn {
+  align-items: center;
+  padding-left: 7em;
+}
+.featured .left .inner-transition2 .learn button {
+  background-color: rgb(143, 13, 231);
+  font-family: "Poppins";
+  width: 7em;
+  height: 3em;
+  border-radius: 2em;
+  cursor: pointer;
+}
+.featured .right {
+  display: flex;
+  width: 80%;
+  height: 70%;
+  padding: 1.7em;
+  border-radius: 5em;
+}
+
+.which_skills {
+  font-size: small;
+}
+
+.skills {
+  margin: 0;
+  padding: 0.5em;
+  display: grid;
+  padding: 1.2em;
+}
+.skills img {
+  width: 3em;
+  height: 3em;
+}
+.skills .heading {
+  font-weight: 600;
+  font-size: medium;
+}
+.skills a {
+  text-decoration: none;
+  color: #ea6625;
+}
+.skills p {
+  font-size: 75%;
+}
+.skills .skill1 {
+  background: rgb(235, 235, 232);
+  border-radius: 2em;
+  padding: 1.2em;
+  width: 80%;
+  height: 80%;
+  display: inline-flexbox;
+  flex-direction: column;
+}
+
+.projects {
+  background: linear-gradient(white, rgb(176, 176, 241));
+  margin: 0;
+  padding: 0.5em;
+  display: grid;
+  padding: 1.2em;
+}
+.projects h {
+  color: azure;
+}
+.projects .heading_p {
+  font-weight: 600;
+  color: azure;
+}
+.projects p {
+  color: azure;
+}
+.projects .learnmore {
+  width: 10em;
+  height: 2.5em;
+  border-radius: 2em;
+  background-color: azure;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+.projects .project1 {
+  background: rgb(88, 48, 89);
+  border-radius: 2em;
+  padding: 2em;
+  width: 80%;
+  height: 70%;
+  display: inline-flexbox;
+  flex-direction: column;
+}
+
+.contact {
+  background: linear-gradient(rgb(176, 176, 241), white);
+  margin: 0;
+  display: grid;
+  padding: 1.2em;
+}
+.contact .contact_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 60% 50%;
+    text-align: left;
+    padding: 9em;
+    padding-top: 3em;
+  }
+  .hero .page {
+    font-weight: 600;
+    font-size: small;
+    color: azure;
+  }
+  .hero .content {
+    color: azure;
+    font-size: 17px;
+  }
+  .hero .content .intro {
+    font-size: 4.5em;
+    font-weight: 700;
+    color: azure;
+  }
+  .hero .content .intro .intro-name {
+    color: rgb(143, 13, 231);
+  }
+  .featured {
+    padding: 3em;
+    background: linear-gradient(#030961, black);
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .featured .left .inner-transition2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin: 1 em;
+    width: 90%;
+  }
+  .featured .left .inner-transition2 .subtitle {
+    text-transform: uppercase;
+    -webkit-text-decoration: double;
+            text-decoration: double;
+    letter-spacing: 0.5em;
+    padding-left: 0.7em;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: azure;
+    margin-top: 5em;
+  }
+  .featured .left .inner-transition2 .featured-title {
+    text-decoration: none;
+    text-align: left;
+    color: rgb(143, 13, 231);
+    font-weight: 700;
+    font-size: 3.5em;
+    margin: 0;
+  }
+  .featured .left .inner-transition2 .featured-desc {
+    text-align: center;
+    color: #f1edeb;
+    font-weight: 300;
+    padding-left: 1em;
+    text-align: left;
+  }
+  .featured .left .inner-transition2 .learn {
+    align-items: center;
+    padding-left: 7em;
+  }
+  .featured .right {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    padding: 1.7em;
+    border-radius: 5em;
+  }
+  .which_skills {
+    font-size: small;
+    padding: 6em;
+  }
+  .skills {
+    margin: 0;
+    padding-left: 8em;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+  }
+  .skills img {
+    width: 3em;
+    height: 3em;
+  }
+  .skills .heading {
+    font-weight: 600;
+    font-size: medium;
+  }
+  .skills a {
+    text-decoration: none;
+    color: #ea6625;
+  }
+  .skills p {
+    font-size: 75%;
+  }
+  .skills .skill1 {
+    background: rgb(235, 235, 232);
+    border-radius: 2em;
+    padding: 1.2em;
+    width: 80%;
+    height: 80%;
+    display: inline-flexbox;
+    flex-direction: column;
+  }
+  .projects {
+    background: linear-gradient(white, rgb(176, 176, 241));
+    padding: 5em;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  .projects .project1 {
+    background: rgb(88, 48, 89);
+    border-radius: 2em;
+    padding: 1em;
+    width: 80%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact {
+    display: grid;
+  }
+}/*# sourceMappingURL=main.css.map */
