@@ -11,6 +11,7 @@ body{
 
 .nav_container{
       background: black;
+      
 
     .header{
         display:grid;
@@ -41,18 +42,22 @@ body{
         display: none;
     }
 }
-
+.page{
+    font-weight: 600;
+    font-size: small;
+    color: black;
+    text-align: center;
+    margin:0;
+    
+    background-color: #ea6625;
+  }
 .hero{
     margin: 0;
     padding-left: 1em;
     background: linear-gradient(black,#030961);
-    display: grid;
+   
 
-    .page{
-          font-weight: 600;
-          font-size: small;
-          color:azure;
-        }
+   
 
     .content{
         color:azure;
@@ -373,46 +378,46 @@ body{
     padding:6em;
     }
 
-    .skills{
-    margin: 0;
-    padding-left:8em;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3% ;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height:60%;
+//     .skills{
+//     margin: 0;
+//     padding-left:8em;
+//     display: grid;
+//     grid-template-columns: 33.3% 33.3% 33.3% ;
+//     justify-content: center;
+//     align-items: center;
+//     width: 80%;
+//     height:60%;
   
-    img{
-       width: 3em;
-       height:3em;
-   }
+//     img{
+//        width: 3em;
+//        height:3em;
+//    }
 
-   .heading{
-       font-weight: 600;
-       font-size: medium;
-   }
+//    .heading{
+//        font-weight: 600;
+//        font-size: medium;
+//    }
 
-   a{
-       text-decoration: none;
-       color:#ea6625
-   }
+//    a{
+//        text-decoration: none;
+//        color:#ea6625
+//    }
 
-   p{
-       font-size: 75%;
-   }
+//    p{
+//        font-size: 75%;
+//    }
 
-   .skill1{
-       background:rgb(235, 235, 232);
-       border-radius: 2em;
-       padding: 1.2em;
-       width:80%;
-       height:80%;
-       display:inline-flexbox;
-       flex-direction: column;
-       }
+//    .skill1{
+//        background:rgb(235, 235, 232);
+//        border-radius: 2em;
+//        padding: 1.2em;
+//        width:80%;
+//        height:80%;
+//        display:inline-flexbox;
+//        flex-direction: column;
+//        }
    
-} 
+// } 
 
 
 .projects{
@@ -441,6 +446,7 @@ body{
 .contact{
 
     display: grid;
+    grid-template-columns: 50% 50%;
        
     .contact_info{
 
