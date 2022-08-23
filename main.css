@@ -41,13 +41,15 @@ body {
 
 .page {
   font-weight: 600;
-  font-size: small;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-size: small;
+  font-family: 'Courier New', Courier, monospace; */
   text-align: center;
- 
-  
- 
-} 
+  color: azure;
+  background-color: black;
+}
+.page p{
+  color: azure !important;
+}
 
 .hero {
   margin: 0;
@@ -147,8 +149,9 @@ body {
   font-family:monospace;
   text-align: center;
 }
+
   .text-typing p {
-    margin: 3em 0;
+    margin: 2em 0;
   text-align: center;
   font-weight: bold;
   font-size: 3.5em;
@@ -158,14 +161,12 @@ body {
   padding: 0%;
   white-space:nowrap;
   overflow:hidden;
-  animation:typing 10s steps(30, end) forwards infinite,
+  animation:typing 8s steps(14, end) forwards infinite,
               blink 1s infinite;
   }
   @keyframes typing {
   0% { width:0% }
-  33%{width: 33%}
-  66%{width: 66%}
-  100% { width:100% }
+  31%{width: 31%}
   }
   @keyframes blink {
   0%,100% {
@@ -175,6 +176,16 @@ body {
       border-right:2px solid black;
   }
   }
+  .c p{
+    animation:typingc 8s steps(14, end) forwards infinite,
+  }
+  @keyframes typingc {
+  0% { width:0% }
+  50%{width: 50%}
+  }
+  /* .page p{
+    color: azure;
+  } */
 /* .skills {
   margin: 0;
   padding: 0.5em;
@@ -206,7 +217,7 @@ body {
   flex-direction: column;
 } */
 
-.project {
+/* .project {
   background: linear-gradient(rgb(255, 255, 255), rgb(10, 152, 240));
   margin: 0;
   padding: 0.5em;
@@ -239,10 +250,34 @@ body {
   height: 50%;
   display: inline-flexbox;
   flex-direction: column;
+} */
+.grid { 
+  padding: 3% 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  align-items: start;
+  }
+.grid > article {
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 12px 0px  rgba(190, 179, 179, 0.749)
 }
+.grid > article img {
+  max-width: 100%;
+}
+.text {
+  padding: 0 20px 20px;
+}
+.text > button {
+  background: orange;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  }
 
 .contact {
-  background: linear-gradient(rgb(176, 176, 241), white);
+  background: linear-gradient(to bottom right,  rgb(176, 176, 241), white);
   margin: 0;
   display: grid;
   padding: 1.2em;
@@ -341,7 +376,7 @@ body {
 /* ///////////////////////////// */
 
 .snow_hero {
-  background-image: linear-gradient(to bottom right, #ffffff , #42b6eb );
+  background-image: linear-gradient( #ffffff , #42b6eb );
   min-height: 100vh;
   min-height: 30rem;
   position: relative;
@@ -447,7 +482,7 @@ body {
 .js {width: 65%; background-color: rgb(9, 87, 126);border-radius: 2em;padding-right: 2em;} 
 .php {width: 60%; background-color: rgb(9, 87, 126);border-radius: 2em;padding-right: 2em;}
 
-  .projects {
+  /* .projects {
     background: linear-gradient(white, rgb(176, 176, 241));
     padding: 5em;
     display: grid;
@@ -463,9 +498,51 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+  } */
+  .projects{
+    background-image: linear-gradient(to bottom left, #42b6eb, #ffffff);
   }
+  .grid { 
+    padding: 3% 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    }
+  .grid > article {
+    background-color: azure;
+    border-radius: 2em;
+    display: inline-block;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 12px 0px  rgba(190, 179, 179, 0.749)
+  }
+  .grid > article img {
+    border-radius: 2em;
+    max-width: 100%;
+  }.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 20px;
+    position: relative;
+    bottom: 0;
+  }
+  .text > button {
+    border-radius: 2em;
+    background: rgb(147, 85, 157);
+    border: 0;
+    color: white;
+    padding: 10px;
+    
+    width: 50%;
+    }
   .contact {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+  div.cot>p{
+    height: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
