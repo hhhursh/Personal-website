@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+html{
+  width: 100vw;
+}
 body {
   height: 100vh;
   margin: 0;
@@ -8,11 +11,13 @@ body {
 
 .nav_container {
   background: black;
+  
 }
 .nav_container .header {
   display: grid;
   justify-content: space-around;
-  height: 7em;
+  height: 5em;
+  
 }
 .nav_container .header nav ul {
   display: flex;
@@ -34,14 +39,15 @@ body {
   display: none;
 }
 
-/* .page {
+.page {
   font-weight: 600;
   font-size: small;
-  color: black;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
-  margin: 0;
-  background-color: #ea6625;
-} */
+ 
+  
+ 
+} 
 
 .hero {
   margin: 0;
@@ -57,6 +63,14 @@ body {
   color: azure;
   font-size: 15px;
   transition: transform 1s;
+  width: 65%;
+  overflow: hidden;
+ animation: scale_text 2s forwards ease-in;
+}
+
+@keyframes scale_text{
+  0% { transform:translateX(100%)};
+ 100%{ transform:translateX(50%) };
 }
 .hero .content .intro {
   font-size: 3em;
@@ -134,15 +148,17 @@ body {
   text-align: center;
 }
   .text-typing p {
+    margin: 3em 0;
   text-align: center;
-  font-size:6em;
+  font-weight: bold;
+  font-size: 3.5em;
   width:fit-content;
-  color: orange;
+  color: rgb(0, 1, 2);
   display: inline-block;
-  margin:0px;
+  padding: 0%;
   white-space:nowrap;
   overflow:hidden;
-  animation:typing 7s steps(30, end) forwards infinite,
+  animation:typing 10s steps(30, end) forwards infinite,
               blink 1s infinite;
   }
   @keyframes typing {
@@ -190,13 +206,11 @@ body {
   flex-direction: column;
 } */
 
-.projects {
-  background: linear-gradient(rgb(255, 255, 255), rgb(117, 191, 237));
+.project {
+  background: linear-gradient(rgb(255, 255, 255), rgb(10, 152, 240));
   margin: 0;
   padding: 0.5em;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
   padding: 1.2em;
 }
 .projects h {
@@ -395,12 +409,17 @@ body {
   flex-direction: column; */
 }
   .skill .container {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
+    width: 95%; /* Full width */
+    background-color: rgb(252, 251, 251); /* Grey background */
+    border-radius: 2em 2em;
+  }
+
+  .skills .css{
+    border-radius: 2em 2em 2em 2em;
   }
 .heading{
     font-size: xx-large;
-    color: black;
+    color: white;
     text-align: center;
     margin: 4%;
 }
@@ -410,6 +429,9 @@ body {
 }
 .sk p{
   margin: 1%;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #030961;
 }
 .skills {
   text-align: right; /* Right-align text */
@@ -420,11 +442,11 @@ body {
 .sk:hover{
   transform: scale(1.05);
 }
-.html {width: 90%; background-color:rgb(255, 132, 0);} /* Green */
-.css {width: 80%; background-color: rgb(255, 132, 0);} /* Blue */
-.js {width: 65%; background-color: rgb(255, 132, 0);} /* Red */
-.php {width: 60%; background-color: rgb(255, 132, 0);}
- 
+.html {width: 90%; background-color:rgb(9, 87, 126); border-radius: 2em; padding-right: 2em;} 
+.css {width: 80%; background-color: rgb(9, 87, 126);border-radius: 2em; padding-right: 2em;}
+.js {width: 65%; background-color: rgb(9, 87, 126);border-radius: 2em;padding-right: 2em;} 
+.php {width: 60%; background-color: rgb(9, 87, 126);border-radius: 2em;padding-right: 2em;}
+
   .projects {
     background: linear-gradient(white, rgb(176, 176, 241));
     padding: 5em;
